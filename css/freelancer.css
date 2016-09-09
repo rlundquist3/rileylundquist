@@ -82,6 +82,18 @@ hr.star-primary:after {
 .img-centered {
   margin: 0 auto;
 }
+.img-circle {
+  /* This image is 687 wide by 1024 tall, similar to your aspect ratio */
+  /* make a square container */
+  width: 256px;
+  height: 256px;
+  /* fill the container, preserving aspect ratio, and cropping to fit */
+  background-size: cover;
+  /* center the image vertically and horizontally */
+  background-position: center;
+  /* round the edges to a circle with border radius 1/2 container size */
+  border-radius: 50%;
+}
 header {
   text-align: center;
   background: #474d54;
@@ -341,6 +353,22 @@ footer .footer-below {
   color: #16b697;
   background: white;
   border: solid 2px white;
+}
+.btn-outline-success {
+  color: #16b697;
+  font-size: 20px;
+  border: solid 2px #16b697;
+  background: transparent;
+  transition: all 0.3s ease-in-out;
+  margin-top: 15px;
+}
+.btn-outline-success:hover,
+.btn-outline-success:focus,
+.btn-outline-success:active,
+.btn-outline-success.active {
+  color: white;
+  background: #16b697;
+  border: solid 2px #16b697;
 }
 .btn-primary {
   color: white;

@@ -85,6 +85,23 @@ hr.star-primary:after {
 	margin: 0 auto;
 }
 
+.img-circle {
+	/* This image is 687 wide by 1024 tall, similar to your aspect ratio */
+
+    /* make a square container */
+    width: 256px;
+    height: 256px;
+
+    /* fill the container, preserving aspect ratio, and cropping to fit */
+    background-size: cover;
+
+    /* center the image vertically and horizontally */
+    background-position: center;
+
+    /* round the edges to a circle with border radius 1/2 container size */
+    border-radius: 50%;
+}
+
 header {
 	text-align: center;
 	background: @theme-primary;
@@ -377,6 +394,23 @@ footer {
 		color: @theme-success;
 		background: white;
 		border: solid 2px white;
+	}
+}
+
+.btn-outline-success {
+	color: @theme-success;
+	font-size: 20px;
+	border: solid 2px @theme-success;
+	background: transparent;
+	transition: all 0.3s ease-in-out;
+	margin-top: 15px;
+	&:hover,
+	&:focus,
+	&:active,
+	&.active {
+		color: white;
+		background: @theme-success;
+		border: solid 2px @theme-success;
 	}
 }
 
