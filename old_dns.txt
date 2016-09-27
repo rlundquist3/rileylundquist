@@ -1,0 +1,5 @@
+TXT google-site-verification=cP3lzafUSj-nZRIKZOWX8DfV--v0jA-3i2WSZ_0AlDw
+
+TXT google-site-verification=SUXNHL_4EzgbcgeHa0_KNACp2Cg9wS6D_wXX5GYm09M
+
+v=spf1 include:_spf.google.com ~all
