@@ -68,9 +68,6 @@ hr.star-primary:after {
 hr.star-light {
   border-color: white;
 }
-hr.star-green {
-  border-color: #474d54;
-}
 hr.star-light:after {
   background-color: #474d54;
   color: white;
