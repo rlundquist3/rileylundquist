@@ -1,6 +1,6 @@
 /*!
  * Start Bootstrap - Freelancer v3.3.7+1 (http://startbootstrap.com/template-overviews/freelancer)
- * Copyright 2013-2017 Start Bootstrap
+ * Copyright 2013-2018 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
  */
 body {
@@ -37,14 +37,17 @@ a.active {
   outline: none;
 }
 h1,
-h2,
+h2 {
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+}
 h3,
 h4,
 h5,
 h6 {
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  text-transform: uppercase;
-  font-weight: 700;
+  font-weight: 300;
 }
 hr.star-light,
 hr.star-primary,
@@ -94,8 +97,8 @@ hr.star-success:after {
 .img-circle {
   /* This image is 687 wide by 1024 tall, similar to your aspect ratio */
   /* make a square container */
-  width: 256px;
-  height: 256px;
+  width: 200px;
+  height: 200px;
   /* fill the container, preserving aspect ratio, and cropping to fit */
   background-size: cover;
   /* center the image vertically and horizontally */
@@ -103,14 +106,21 @@ hr.star-success:after {
   /* round the edges to a circle with border radius 1/2 container size */
   border-radius: 50%;
 }
+@media (max-width: 767px) {
+  .img-circle {
+    margin-top: 20px;
+    width: 100px;
+    height: 100px;
+  }
+}
 header {
   text-align: center;
   background: #474d54;
   color: white;
 }
 header .container {
-  padding-top: 100px;
-  padding-bottom: 50px;
+  padding-top: 50px;
+  padding-bottom: 25px;
 }
 header img {
   display: block;
@@ -120,23 +130,23 @@ header .intro-text .name {
   display: block;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
-  font-weight: 700;
-  font-size: 2em;
+  font-weight: 300;
+  font-size: 1.5em;
 }
 header .intro-text .skills {
-  font-size: 1.25em;
-  font-weight: 300;
+  font-size: 1em;
+  font-weight: 200;
 }
 @media (min-width: 768px) {
   header .container {
-    padding-top: 200px;
-    padding-bottom: 100px;
+    padding-top: 150px;
+    padding-bottom: 50px;
   }
   header .intro-text .name {
-    font-size: 4.75em;
+    font-size: 2em;
   }
   header .intro-text .skills {
-    font-size: 1.75em;
+    font-size: 1.5em;
   }
 }
 .navbar-custom {
@@ -219,7 +229,7 @@ section {
 }
 section h2 {
   margin: 0;
-  font-size: 3em;
+  font-size: 2em;
 }
 section.success {
   background: #474d54;
@@ -253,6 +263,9 @@ section.success {
 #portfolio .portfolio-item .portfolio-link .portfolio-icon i {
   color: #474d54;
   font-size: 100px;
+}
+#portfolio .portfolio-item .portfolio-link .img-wide {
+  padding-top: 20px;
 }
 #portfolio .portfolio-item .portfolio-link .caption {
   background: rgba(22, 182, 151, 0.9);
@@ -516,4 +529,15 @@ fieldset[disabled] .btn-success.active {
 }
 .portfolio-modal .modal-content {
   text-align: center;
+}
+.portfolio-modal .modal-content img {
+  padding-bottom: 20px;
+}
+@media (max-width: 767px) {
+  .portfolio-modal {
+    width: 90%;
+  }
+  .portfolio-modal .modal-content p {
+    font-size: smaller;
+  }
 }

@@ -36,11 +36,17 @@ a.active {
 	outline: none;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2 {
 	font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	text-transform: uppercase;
 	font-weight: 700;
 }
+
+h3, h4, h5, h6 {
+	font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight: 300;
+}
+
 
 hr.star-light,
 hr.star-primary,
@@ -100,8 +106,8 @@ hr.star-success:after {
 	/* This image is 687 wide by 1024 tall, similar to your aspect ratio */
 
     /* make a square container */
-    width: 256px;
-    height: 256px;
+    width: 200px;
+    height: 200px;
 
     /* fill the container, preserving aspect ratio, and cropping to fit */
     background-size: cover;
@@ -113,13 +119,21 @@ hr.star-success:after {
     border-radius: 50%;
 }
 
+@media(max-width:767px) {
+  .img-circle {
+    margin-top: 20px;
+    width: 100px;
+    height: 100px;
+  }
+}
+
 header {
 	text-align: center;
 	background: @theme-primary;
 	color: white;
 	.container {
-		padding-top: 100px;
-		padding-bottom: 50px;
+		padding-top: 50px;
+		padding-bottom: 25px;
 	}
 	img {
 		display: block;
@@ -130,12 +144,12 @@ header {
 			display: block;
 			font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
 			text-transform: uppercase;
-			font-weight: 700;
-			font-size: 2em;
+			font-weight: 300;
+			font-size: 1.5em;
 		}
 		.skills {
-			font-size: 1.25em;
-			font-weight: 300;
+			font-size: 1em;
+			font-weight: 200;
 		}
 	}
 }
@@ -143,15 +157,15 @@ header {
 @media(min-width:768px) {
 	header {
 		.container {
-			padding-top: 200px;
-			padding-bottom: 100px;
+			padding-top: 150px;
+			padding-bottom: 50px;
 		}
 		.intro-text {
 			.name {
-				font-size: 4.75em;
+				font-size: 2em;
 			}
 			.skills {
-				font-size: 1.75em;
+				font-size: 1.5em;
 			}
 		}
 	}
@@ -242,7 +256,7 @@ section {
     padding: 100px 0;
     h2 {
     	margin: 0;
-    	font-size: 3em;
+    	font-size: 2em;
     }
 }
 
@@ -281,6 +295,10 @@ section.success {
                 font-size: 100px;
 
               }
+            }
+
+            .img-wide {
+              padding-top: 20px;
             }
 
             .caption {
@@ -494,8 +512,23 @@ footer {
 
   .modal-content {
     text-align: center;
+    img {
+      padding-bottom: 20px;
+    }
+  }
+}
 
+@media(max-width:767px) {
+  .portfolio-modal {
+    width: 90%;
 
+    .modal-content {
+      h3 {
+      }
+      p {
+        font-size: smaller;
+      }
+    }
   }
 }
 
